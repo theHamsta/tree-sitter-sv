@@ -1,0 +1,1078 @@
+[
+  {
+    "type": "attr_name",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "escaped_identifier",
+          "named": true
+        },
+        {
+          "type": "simple_identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "attr_spec",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attr_name",
+          "named": true
+        },
+        {
+          "type": "constant_expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "attribute_instance",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attr_spec",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "constant_range",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "constant_expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "data_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "data_type_or_implicit",
+          "named": true
+        },
+        {
+          "type": "lifetime",
+          "named": true
+        },
+        {
+          "type": "list_of_variable_decl_assignments",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "data_type",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "integer_atom_type",
+          "named": true
+        },
+        {
+          "type": "signing",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "data_type_or_implicit",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "data_type",
+          "named": true
+        },
+        {
+          "type": "implicit_data_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "data_type_or_void",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "data_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "decimal_number",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "unsigned_number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "function_body_declaration_ansi",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attribute_instance",
+          "named": true
+        },
+        {
+          "type": "block_item_declaration",
+          "named": true
+        },
+        {
+          "type": "escaped_identifier",
+          "named": true
+        },
+        {
+          "type": "function_data_type_or_implicit",
+          "named": true
+        },
+        {
+          "type": "simple_identifier",
+          "named": true
+        },
+        {
+          "type": "statement",
+          "named": true
+        },
+        {
+          "type": "tf_port_list",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "function_body_declaration_nonansi",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attribute_instance",
+          "named": true
+        },
+        {
+          "type": "escaped_identifier",
+          "named": true
+        },
+        {
+          "type": "function_data_type_or_implicit",
+          "named": true
+        },
+        {
+          "type": "simple_identifier",
+          "named": true
+        },
+        {
+          "type": "statement",
+          "named": true
+        },
+        {
+          "type": "tf_item_declaration",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "function_data_type_or_implicit",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "data_type_or_void",
+          "named": true
+        },
+        {
+          "type": "implicit_data_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "function_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "function_body_declaration_ansi",
+          "named": true
+        },
+        {
+          "type": "function_body_declaration_nonansi",
+          "named": true
+        },
+        {
+          "type": "lifetime",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "implicit_data_type",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "packed_dimension",
+          "named": true
+        },
+        {
+          "type": "signing",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "integer_atom_type",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "jump_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "primary",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lifetime",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "list_of_param_assignments",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "param_assignment",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "list_of_type_assignments",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "type_assignment",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "list_of_variable_decl_assignments",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "variable_decl_assignment",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "local_parameter_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "data_type_or_implicit",
+          "named": true
+        },
+        {
+          "type": "list_of_param_assignments",
+          "named": true
+        },
+        {
+          "type": "list_of_type_assignments",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "package_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attribute_instance",
+          "named": true
+        },
+        {
+          "type": "escaped_identifier",
+          "named": true
+        },
+        {
+          "type": "lifetime",
+          "named": true
+        },
+        {
+          "type": "package_item",
+          "named": true
+        },
+        {
+          "type": "simple_identifier",
+          "named": true
+        },
+        {
+          "type": "timeunits_declaration",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "package_item",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "data_declaration",
+          "named": true
+        },
+        {
+          "type": "function_declaration",
+          "named": true
+        },
+        {
+          "type": "local_parameter_declaration",
+          "named": true
+        },
+        {
+          "type": "parameter_declaration",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "packed_dimension",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "constant_range",
+          "named": true
+        },
+        {
+          "type": "unsized_dimension",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "param_assignment",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "constant_param_expression",
+          "named": true
+        },
+        {
+          "type": "escaped_identifier",
+          "named": true
+        },
+        {
+          "type": "simple_identifier",
+          "named": true
+        },
+        {
+          "type": "unpacked_dimension",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "parameter_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "data_type_or_implicit",
+          "named": true
+        },
+        {
+          "type": "list_of_param_assignments",
+          "named": true
+        },
+        {
+          "type": "list_of_type_assignments",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "port_direction",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "primary",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "binary_number",
+          "named": true
+        },
+        {
+          "type": "decimal_number",
+          "named": true
+        },
+        {
+          "type": "hex_number",
+          "named": true
+        },
+        {
+          "type": "octal_number",
+          "named": true
+        },
+        {
+          "type": "time_literal",
+          "named": true
+        },
+        {
+          "type": "unbased_unsized_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "signing",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_text",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "attribute_instance",
+          "named": true
+        },
+        {
+          "type": "package_declaration",
+          "named": true
+        },
+        {
+          "type": "package_item",
+          "named": true
+        },
+        {
+          "type": "timeunits_declaration",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attribute_instance",
+          "named": true
+        },
+        {
+          "type": "escaped_identifier",
+          "named": true
+        },
+        {
+          "type": "jump_statement",
+          "named": true
+        },
+        {
+          "type": "simple_identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tf_item_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "block_item_declaration",
+          "named": true
+        },
+        {
+          "type": "tf_port_declaration",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tf_port_direction",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "port_direction",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tf_port_item",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attribute_instance",
+          "named": true
+        },
+        {
+          "type": "data_type_or_implicit",
+          "named": true
+        },
+        {
+          "type": "escaped_identifier",
+          "named": true
+        },
+        {
+          "type": "primary",
+          "named": true
+        },
+        {
+          "type": "simple_identifier",
+          "named": true
+        },
+        {
+          "type": "tf_port_direction",
+          "named": true
+        },
+        {
+          "type": "variable_dimension",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tf_port_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "tf_port_item",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "time_literal",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "time_unit",
+          "named": true
+        },
+        {
+          "type": "unsigned_number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "timeunits_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "time_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "type_assignment",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "data_type",
+          "named": true
+        },
+        {
+          "type": "escaped_identifier",
+          "named": true
+        },
+        {
+          "type": "simple_identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "unpacked_dimension",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "constant_expression",
+          "named": true
+        },
+        {
+          "type": "constant_range",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "unsized_dimension",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "variable_decl_assignment",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "escaped_identifier",
+          "named": true
+        },
+        {
+          "type": "primary",
+          "named": true
+        },
+        {
+          "type": "simple_identifier",
+          "named": true
+        },
+        {
+          "type": "variable_dimension",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "variable_dimension",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "associative_dimension",
+          "named": true
+        },
+        {
+          "type": "queue_dimension",
+          "named": true
+        },
+        {
+          "type": "unpacked_dimension",
+          "named": true
+        },
+        {
+          "type": "unsized_dimension",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "$",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": "(*",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": "*)",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "/",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": ";",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "associative_dimension",
+    "named": true
+  },
+  {
+    "type": "automaitc",
+    "named": false
+  },
+  {
+    "type": "binary_number",
+    "named": true
+  },
+  {
+    "type": "block_item_declaration",
+    "named": true
+  },
+  {
+    "type": "break",
+    "named": false
+  },
+  {
+    "type": "byte",
+    "named": false
+  },
+  {
+    "type": "const",
+    "named": false
+  },
+  {
+    "type": "const ref",
+    "named": false
+  },
+  {
+    "type": "constant_expression",
+    "named": true
+  },
+  {
+    "type": "constant_param_expression",
+    "named": true
+  },
+  {
+    "type": "continue",
+    "named": false
+  },
+  {
+    "type": "endfunction",
+    "named": false
+  },
+  {
+    "type": "endpackage",
+    "named": false
+  },
+  {
+    "type": "escaped_identifier",
+    "named": true
+  },
+  {
+    "type": "function",
+    "named": false
+  },
+  {
+    "type": "hex_number",
+    "named": true
+  },
+  {
+    "type": "inout",
+    "named": false
+  },
+  {
+    "type": "input",
+    "named": false
+  },
+  {
+    "type": "int",
+    "named": false
+  },
+  {
+    "type": "integer",
+    "named": false
+  },
+  {
+    "type": "localparam",
+    "named": false
+  },
+  {
+    "type": "longint",
+    "named": false
+  },
+  {
+    "type": "non_zero_unsigned_number",
+    "named": true
+  },
+  {
+    "type": "null",
+    "named": false
+  },
+  {
+    "type": "octal_number",
+    "named": true
+  },
+  {
+    "type": "output",
+    "named": false
+  },
+  {
+    "type": "package",
+    "named": false
+  },
+  {
+    "type": "parameter",
+    "named": false
+  },
+  {
+    "type": "queue_dimension",
+    "named": true
+  },
+  {
+    "type": "ref",
+    "named": false
+  },
+  {
+    "type": "return",
+    "named": false
+  },
+  {
+    "type": "shortint",
+    "named": false
+  },
+  {
+    "type": "signed",
+    "named": false
+  },
+  {
+    "type": "simple_identifier",
+    "named": true
+  },
+  {
+    "type": "static",
+    "named": false
+  },
+  {
+    "type": "tf_port_declaration",
+    "named": true
+  },
+  {
+    "type": "this",
+    "named": false
+  },
+  {
+    "type": "time",
+    "named": false
+  },
+  {
+    "type": "time_unit",
+    "named": true
+  },
+  {
+    "type": "timeprecision",
+    "named": false
+  },
+  {
+    "type": "timeunit",
+    "named": false
+  },
+  {
+    "type": "type",
+    "named": false
+  },
+  {
+    "type": "unbased_unsized_literal",
+    "named": true
+  },
+  {
+    "type": "unsigned",
+    "named": false
+  },
+  {
+    "type": "unsigned_number",
+    "named": true
+  },
+  {
+    "type": "var",
+    "named": false
+  },
+  {
+    "type": "void",
+    "named": false
+  }
+]
